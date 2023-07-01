@@ -25,4 +25,18 @@ describe("route entity tests", () =>{
     const route = new Route(routeProps);
     expect(route.props).toStrictEqual(routeProps);
   });
+  it("should be able to update title", () => {
+    const routeProps: RouteProps = {
+      title: "my route with points",
+      startPosition: { lat: 15, lng: 15 },
+      endPosition: { lat: 20, lng: 20 },
+      points: [
+        { lat: 12, lng: 12 },
+        { lat: 12, lng: 12 },
+      ],
+    };
+    const route = new Route(routeProps);
+    route.updateTitle("new title");
+    expect(route.title).toBe("new title");
+  });
 });

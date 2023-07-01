@@ -6,7 +6,6 @@ export type RouteProps = {
   endPosition: Coordinates;
   points?: Coordinates[];
 };
-
 export class Route {
   public props: Required<RouteProps>;
 
@@ -17,23 +16,32 @@ export class Route {
     };
   }
 
-  
+  updateTitle(title: string) {
+    this.title = title;
+  }
+
+  updateStartPosition(startPosition: Coordinates) {
+    this.startPosition = startPosition;
+  }
+
+  updateEndPosition(endPosition: Coordinates) {
+    this.endPosition = endPosition;
+  }
+
+  public get title(): string{
+    return this.props.title;
+  }
 
   private set title(title: string) {
     this.props.title = title;
   }
+
+  private set startPosition(startPosition: Coordinates) {
+    this.props.startPosition = startPosition;
+  }
+
+  private set endPosition(endPosition: Coordinates) {
+    this.props.endPosition = endPosition;
+  }
+
 }
-
-
-
-const route = new Route({
-  title: "minha rota",
-  startPosition: { lat: 15, lng: 15 },
-  endPosition: { lat: 20, lng: 20 },
-  points: [
-    { lat: 12, lng: 12 },
-    { lat: 12, lng: 12 },
-    { lat: 12, lng: 12 }, 
-    { lat: 12, lng: 12 },
-  ]
-});

@@ -1,13 +1,25 @@
 TN:
 SF:src\entities\route.entity.ts
-FN:10,<instance_members_initializer>
-FN:13,Route
-FN:22,set title
-FNF:3
-FNH:2
+FN:9,<instance_members_initializer>
+FN:12,Route
+FN:19,updateTitle
+FN:23,updateStartPosition
+FN:27,updateEndPosition
+FN:31,get title
+FN:35,set title
+FN:39,set startPosition
+FN:43,set endPosition
+FNF:9
+FNH:5
 FNDA:3,<instance_members_initializer>
 FNDA:3,Route
-FNDA:0,set title
+FNDA:1,updateTitle
+FNDA:0,updateStartPosition
+FNDA:0,updateEndPosition
+FNDA:1,get title
+FNDA:1,set title
+FNDA:0,set startPosition
+FNDA:0,set endPosition
 DA:1,1
 DA:2,1
 DA:3,1
@@ -17,7 +29,7 @@ DA:6,1
 DA:7,1
 DA:8,1
 DA:9,1
-DA:10,1
+DA:10,3
 DA:11,3
 DA:12,3
 DA:13,3
@@ -27,31 +39,42 @@ DA:16,3
 DA:17,3
 DA:18,3
 DA:19,3
-DA:20,3
-DA:21,3
+DA:20,1
+DA:21,1
 DA:22,3
-DA:23,0
+DA:23,3
 DA:24,0
-DA:25,3
-DA:26,1
-DA:27,1
-DA:28,1
-DA:29,1
-DA:30,1
-DA:31,1
+DA:25,0
+DA:26,3
+DA:27,3
+DA:28,0
+DA:29,0
+DA:30,3
+DA:31,3
 DA:32,1
 DA:33,1
-DA:34,1
-DA:35,1
+DA:34,3
+DA:35,3
 DA:36,1
 DA:37,1
-DA:38,1
-DA:39,1
-LF:39
-LH:37
-BRDA:10,0,0,3
-BRDA:13,1,0,3
-BRDA:16,2,0,1
-BRF:3
-BRH:3
+DA:38,3
+DA:39,3
+DA:40,0
+DA:41,0
+DA:42,3
+DA:43,3
+DA:44,0
+DA:45,0
+DA:46,3
+DA:47,3
+LF:47
+LH:39
+BRDA:9,0,0,3
+BRDA:12,1,0,3
+BRDA:15,2,0,1
+BRDA:19,3,0,1
+BRDA:31,4,0,1
+BRDA:35,5,0,1
+BRF:6
+BRH:6
 end_of_record
