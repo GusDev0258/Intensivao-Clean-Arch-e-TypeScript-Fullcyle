@@ -28,6 +28,15 @@ export class Route {
     this.endPosition = endPosition;
   }
 
+  updatePositions({ startPosition, endPosition }: { startPosition: Coordinates; endPosition: Coordinates; }) {
+    this.updateStartPosition(startPosition);
+    this.updateEndPosition(endPosition);
+  }
+
+  updatePoints({ points }: { points: Coordinates[]; }){
+    this.points = points;
+  }
+
   public get title(): string{
     return this.props.title;
   }
@@ -50,6 +59,14 @@ export class Route {
 
   private set endPosition(endPosition: Coordinates) {
     this.props.endPosition = endPosition;
+  }
+
+  public get points(): Coordinates[]{
+    return this.props.points;
+  }
+
+  private set points(points: Coordinates[]) {
+    this.props.points = points;
   }
 
 }
