@@ -36,8 +36,16 @@ export class Route {
     this.props.title = title;
   }
 
+  public get startPosition(): Coordinates{
+    return this.props.startPosition;
+  }
+
   private set startPosition(startPosition: Coordinates) {
     this.props.startPosition = startPosition;
+  }
+
+  public get endPosition(): Coordinates{
+    return this.props.endPosition;
   }
 
   private set endPosition(endPosition: Coordinates) {
