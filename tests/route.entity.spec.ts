@@ -1,4 +1,4 @@
-import { Coordinates, Route, RouteProps } from "../route.entity";
+import { Coordinates, Route, RouteProps } from "../src/domain/entities/route.entity";
 
 describe("route entity tests", () => {
   it("should be able to create a route with empty points", () => {
@@ -113,7 +113,9 @@ describe("route entity tests", () => {
       { lat: 100, lng: 117 },
     ];
 
+    expect(route.points).toHaveLength(2);
     route.updatePoints({ points: newPoints });
     expect(route.points).toBe(newPoints);
+    expect(route.points).toHaveLength(3);
   });
 });

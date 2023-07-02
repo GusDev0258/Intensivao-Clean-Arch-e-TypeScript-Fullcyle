@@ -69,4 +69,7 @@ export class Route {
     this.props.points = points;
   }
 
+  toJSON() {
+    return this.props;
+  }
 }
